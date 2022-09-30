@@ -1,0 +1,355 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+}
+/* Estilos que independem de tema */
+.menu {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+}
+
+.menu .advice {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 1.4em;    
+}
+
+.menu .advice label {
+    font-weight: bolder;
+}
+
+.menu .advice span {
+    margin-left: 10px;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 20px;
+}
+
+.menu li:hover {
+    font-weight: bold;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.menu .theme-switcher {
+    float: right;
+    margin-right: 20px;
+    padding: 15px;
+}
+.menu .theme-switcher label {
+    font-size: 1.4em;
+    margin-right: 5px;
+}
+
+.menu .theme-switcher select {
+    min-width: 100px;
+    font-size: 1.4em;
+}
+
+.subpage {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.subpage .text-content > div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    opacity: .9;
+}
+
+.subpage a[name] {
+    position: relative;
+    top: -30px;
+}
+
+.subpage > div.image {
+    flex: 2;
+    height: auto;
+}
+
+.subpage > div.image img {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.subpage > div.text {
+    flex: 3;
+}
+
+.subpage > div.text h1,
+.subpage > div.text p {
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.subpage > div.text > h1 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-align: center;
+}
+
+.subpage > div.text  p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+
+.subpage .trailer-button {
+    display: block;
+    border: solid 1px #000;
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    font-size: 3em;
+    text-decoration: none;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    top: 20px;
+}
+
+.subpage.brilho {
+    background-color: #005580;
+}
+
+.subpage.brilho h1 {
+    color: #63db8b;
+}
+
+
+.subpage.brilho p {
+    color: #efefef;
+}
+
+.subpage.brilho .trailer-button {
+    background-color: #8bb6ee;
+    color: #555;
+}
+
+.subpage.brilho .trailer-button:hover {
+
+    background-color: #188c8e;
+    color: #cdcdcd;
+}
+
+.subpage.relatos {
+    background-color: #f15d34;
+}
+
+.subpage.relatos h1 {
+    color: #efc267;
+}
+
+
+.subpage.relatos p {
+    color: #121212;
+}
+
+.subpage.relatos .trailer-button {
+    background-color: #efc267;
+    color: #555;
+}
+
+.subpage.relatos .trailer-button:hover {
+
+    background-color: #e0a020;
+    color: #000;
+}
+
+.subpage.divertidamente {
+    background-color: rgb(26, 65, 27);
+}
+
+.subpage.divertidamente h1 {
+    color: #efefef;
+}
+
+
+.subpage.divertidamente p {
+    color: #efefef;
+}
+
+.subpage.divertidamente .trailer-button {
+    background-color: #ababab;
+    color: #555;
+}
+
+.subpage.divertidamente .trailer-button:hover {
+
+    background-color: #188e36;
+    color: #efefef;
+}
+
+
+.subpage.nemo {
+    background-color: #005580;
+}
+
+.subpage.nemo h1 {
+    color: #63db8b;
+}
+
+
+.subpage.nemo p {
+    color: #efefef;
+}
+
+.subpage.nemo .trailer-button {
+    background-color: #8bb6ee;
+    color: #555;
+}
+
+.subpage.nemo .trailer-button:hover {
+
+    background-color: #188c8e;
+    color: #cdcdcd;
+}
+
+.subpage.novodia {
+    background-color: #f15d34;
+}
+
+.subpage.novodia h1 {
+    color: #efc267;
+}
+
+
+.subpage.novodia p {
+    color: #121212;
+}
+
+.subpage.novodia .trailer-button {
+    background-color: #efc267;
+    color: #555;
+}
+
+.subpage.novodia .trailer-button:hover {
+
+    background-color: #e0a020;
+    color: #000;
+}
+
+.subpage.bastardos {
+    background-color: rgb(26, 65, 27);
+}
+
+.subpage.bastardos h1 {
+    color: #efefef;
+}
+
+
+.subpage.bastardos p {
+    color: #efefef;
+}
+
+.subpage.bastardos .trailer-button {
+    background-color: #ababab;
+    color: #555;
+}
+
+.subpage.bastardos .trailer-button:hover {
+
+    background-color: #188e36;
+    color: #efefef;
+}
+
+
+.btn-top {
+    position: fixed;
+    width: 40px;
+    right: 50px;
+    bottom: 25px;
+}
+
+.btn-top:hover {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+/* Light Mode */
+body.light-theme {
+    background-color: #efefef;
+    color: #121212;
+}
+
+body.light-theme .menu {
+    background-color: #121212;
+}
+
+body.light-theme .menu .advice span {
+    color: #efefef;
+}
+
+body.light-theme .menu li:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+body.light-theme .menu label,
+body.light-theme .menu a {
+    color: #efefef;
+}
+
+body.light-theme .text-content > div {
+    background-color: #efefef;
+}
+
+body.light-theme .text-content > div p {
+    color: #121212;
+}
+/* Dark mode */
+body.dark-theme {
+    background-color: #121212;
+    color: #efefef;
+}
+
+body.dark-theme .menu {
+    background-color: #efefef;
+    border-bottom: solid 2px #121212;
+}
+
+body.dark-theme .menu .advice span {
+    color: #121212;
+}
+
+body.dark-theme .menu li:hover {
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+body.dark-theme .menu label,
+body.dark-theme .menu a {
+    color: #121212;
+}
+
+body.dark-theme .text-content > div {
+    background-color: #121212;
+}
+
+body.dark-theme .text-content > div p {
+    color: #efefef;
+}
